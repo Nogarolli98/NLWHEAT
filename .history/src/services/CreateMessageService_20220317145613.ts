@@ -15,15 +15,10 @@ class CreateMassageService {
 
     const infoWS = {
       text: message.text,
-      user_id: message.user_id,
-      created_at: message.create_at,
-      user: {
-        name: message.user.name,
-        avatar_url: message.user.avatar_url,
-      },
+      user_id: message,
     };
 
-    io.emit("new_message", infoWS);
+    io.emit("new_message");
 
     return message;
   }

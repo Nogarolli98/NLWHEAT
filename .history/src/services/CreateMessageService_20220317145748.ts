@@ -23,7 +23,7 @@ class CreateMassageService {
       },
     };
 
-    io.emit("new_message", infoWS);
+    io.emit("new_message");
 
     return message;
   }

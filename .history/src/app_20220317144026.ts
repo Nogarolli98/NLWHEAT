@@ -35,4 +35,4 @@ app.get("/signin/callback", (request, response) => {
   return response.json(code);
 });
 
-export { serverHttp, io };
+app.listen(4000, () => console.log(`Server is ruinning on PORT 4000`));
